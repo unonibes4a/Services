@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dos Círculos Concéntricos</title>
+    <style>
+      body {
+        /*     position: relative;
+    width: 100%;
+    height: 100%; */
+
+        background-color: hsl(0, 0%, 88%);
+        background-image: radial-gradient(
+          circle farthest-side at center,
+          hsl(0, 0%, 100%) 0%,
+          hsl(0, 0%, 89%) 70%,
+          hsl(0, 0%, 88%) 100%
+        );
+      }
+      .panel0 {
+        position: absolute;
+        top: 35%;
+        right: 40%;
+        width: 30vw;
+        height: 70vh;
+        background-color: rgba(83, 186, 255, 0);
+        transform: perspective(10cm) rotateX(55deg) rotateY(0deg) rotateZ(-0deg);
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+        align-content: stretch;
+      }
+      .claseBase {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+ 
+      }
+      .clboxl {
+        width: 90%;
+        height: 4px;
+          padding: 20px;
+          background-color: rgba(230, 215, 201, 0.747);
+          border: 2px solid #cfc5b1; 
+        
+      }
+      .clboxl0{
+        width: 90%;
+        height: 4px;
+          padding: 20px;
+          background-color: rgba(230, 215, 201, 0.178);
+          border: 2px solid #cfc5b136; 
+      }
+      .css-reflect {
+ 
+
+    -webkit-box-reflect: below -7px -webkit-gradient(linear, left top, left bottom,  from(transparent), color-stop(0%, transparent), to(rgba(255, 255, 255, 0.75)));
+	width: 119px;
+}
+.clPos{
+    position: relative;
+    left: 30px;
+
+}
+.clpaneBody{
+ 
+    position: absolute;
+    top: 0%;
+   left: 0%;
+   width: 80%;
+    height: 70vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+ 
+.clmenu0{
+ 
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrado con transform */
+    width: 80%;
+    height: 70%;
+    background-color: #00000000;
+    border: 2px solid #cfc5b1; 
+border-radius: 15px;
+ 
+
+}
+
+    </style>
+
+    <!-- glow circle -->
+<style>
+    .glow-circle {
+        position: relative;
+        left: -50%;
+        width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-right: 5px solid rgba(33, 166, 255, 0.452);
+    border-top: 5px solid rgba(33, 166, 255, 0.5);
+    border-bottom: 5px solid rgba(33, 166, 255, 0.342);
+    box-shadow: 0 0 10px rgba(33, 166, 255, 0.158); /* Agrega sombra para el efecto de brillo */
+    animation: glow 1s ease-in-out infinite; /* Añade animación para el brillo */
+    }
+  
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 15px rgba(33, 166, 255, 0.562);
+      }
+      50% {
+        box-shadow: 0 0 25px rgba(33, 166, 255, 0.507);
+      }
+      100% {
+        box-shadow: 0 0 15px rgba(33, 166, 255, 0.418);
+      }
+    }
+    .clmenubutons{
+        position: absolute;
+    top: 10%;
+    right:-18%;
+ background-color: rgba(0, 0, 0, 0.096);
+    width: 45px;
+    height: 90%;
+    }
+    .clbtCircle{
+        position: relative;
+        left: -33%;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: rgba(32, 163, 223, 0);
+        -webkit-box-shadow: -3px 3px 47px 5px rgba(0,0,0,0.87); 
+box-shadow: -3px 3px 47px 5px rgba(0,0,0,0.87);
+display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+  font-size: 17px;
+ /*  animation: colorChange 100s linear infinite; */
+
+     color: rgba(32, 163, 223, 90);
+
+    }
+    @keyframes colorChange {
+  0% {
+    background-color: rgba(32, 163, 223, 0);
+  }
+ 
+  50% {
+    background-color: rgba(32, 163, 223, 0.568);
+  }
+  1000% {
+    background-color: rgba(32, 163, 223, 0);
+
+  }
+}
+  </style>
+  </head>
+  <body>
+    <div class="clpaneBody">
+        
+        <img class="css-reflect clPos"   src="https://i.etsystatic.com/25817633/r/il/f6db2b/4147814595/il_570xN.4147814595_fmz8.jpg" alt="">
+   
+        <div class="panel0">
+             
+            <div class="clboxl0"></div>
+            <div class="clboxl0"></div>
+            <div class="clboxl0"></div>
+            <div class="clboxl0"></div>
+            <div class="clboxl"></div>
+            <div class="clboxl"></div>
+      
+      
+          </div>
+          <div class="clmenu0">
+
+            <div class="glow-circle"></div>
+            <div class="clmenubutons">
+                <div class="clbtCircle" onclick="alert('inicia el servicio')">
+                  &#x2630;
+               
+                </div>
+            </div>
+
+          </div>
+
+
+    </div>
+<!--      -->
+  </body>
+</html>
